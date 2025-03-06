@@ -1,0 +1,44 @@
+# Ignorar archivos de compilación y carpetas
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]istTemp/
+[Ll]og/
+[Ll]ogs/
+[Bb]in/
+[Oo]bj/
+
+# Ignorar archivos de Visual Studio
+.vs/
+.vscode/
+.idea/
+
+# Ignorar archivos de configuración de usuario
+.vsconfig
+.vs2019/
+
+# Ignorar archivos de NuGet
+# (Este patrón también puede ayudar si estás utilizando paquetes NuGet)
+# *.[Pp]ackage
+# package.lock.json
+
+# Ignorar el archivo global de configuración de NuGet
+.nuget/
+
+# Ignorar archivos de configuración local
+# .user, .suo, .userosscache, .sln.docstates
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignorar archivos de publicación
+publish/
+
+# Ignorar archivos de caché
+.cache/
+
+# Ignorar archivos temporales de Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TEST" Class="UserDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DAVIDR\SQLEXPRESS2008;Initial Catalog=TEST;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TESTConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[USER]" Member="USER">
+    <Type Name="USER">
+      <Column Name="USER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USER_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USER_LAST_NAME" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="USER_LOGIN" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="USER_PWD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USER_EMAIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
