@@ -18,7 +18,8 @@ End Code
                 <div class="form-group">
                     @Html.LabelFor(Function(model) model.USER_ID, htmlAttributes:=New With {.class = "control-label col-md-2"})
                     <div class="col-md-10">
-                        @Html.EditorFor(Function(model) model.USER_ID, New With {.htmlAttributes = New With {.class = "form-control", .disabled = "disabled"}})
+                        @*@Html.EditorFor(Function(model) model.USER_ID, New With {.htmlAttributes = New With {.class = "form-control", .disabled = "disabled"}})*@
+                        @Html.TextBoxFor(Function(model) model.USER_ID, New With {.class = "form-control", .readonly = "readonly"})
                         @Html.ValidationMessageFor(Function(model) model.USER_ID, "", New With {.class = "text-danger"})
                     </div>
                 </div>
