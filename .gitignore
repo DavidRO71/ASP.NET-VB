@@ -42,3 +42,4 @@ publish/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+/LoginMVC/Web.config
