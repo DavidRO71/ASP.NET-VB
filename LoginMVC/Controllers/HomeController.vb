@@ -22,7 +22,8 @@ Namespace Controllers
         <AllowAnonymous>
         Public Async Function Users(data As UserLogin) As Task(Of ActionResult)
             If ModelState.IsValid Then
-                If data.Login() = True Then
+                Dim loginSuccessful As Boolean = Await Task.Run(Function() data.Login())
+                If loginSuccessful Then
                     'Session("username") = data.userName
                     sessionObj.setSession("userName", data.userName)
                     ViewBag.User = sessionObj.getSession("userName")

@@ -8,6 +8,9 @@ End Code
 
 <p>
     <h3>@Html.ActionLink("Create New", "Create")</h3>
+    <form action="@Url.Action("Create", "Users")" method="get">
+        <button type="submit" class="btn btn-new">Create New</button>
+    </form>
 </p>
 <table class="table">
     <tr>
@@ -50,9 +53,8 @@ End Code
         </td>
         <th class="centrado">
             @Html.ActionLink("Edit", "Edit", New With {.id = item.USER_ID}) |
-                @Html.ActionLink("Detail", "Detail", New With {.id = item.USER_ID}) |
-                @Html.ActionLink("Delete", "Delete", New With {.id = item.USER_ID})
-            
+            @Html.ActionLink("Detail", "Detail", New With {.id = item.USER_ID}) |
+            @Html.ActionLink("Delete", "Delete", New With {.id = item.USER_ID})
         </th>
     </tr>
 Next
