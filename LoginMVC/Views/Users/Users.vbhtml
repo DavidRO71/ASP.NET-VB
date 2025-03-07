@@ -8,9 +8,11 @@ End Code
 
 <p>
     <h3>@Html.ActionLink("Create New", "Create")</h3>
-    <form action="@Url.Action("Create", "Users")" method="get">
+
+    @* @Url.Action("Procedimiento -> Create", "Nombre del controlador -> Users")" *@
+    @*<form action="@Url.Action("Create", "Users")" method="get">
         <button type="submit" class="btn btn-new">Create New</button>
-    </form>
+    </form>*@
 </p>
 <table class="table">
     <tr>
